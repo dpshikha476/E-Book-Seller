@@ -1,8 +1,9 @@
-<h2>Search Authors</h2>
+<h2 class="page-header">Search Authors</h2>
 <form action="/authors" method="get">
-<label >Name</label>
-<input type="text" name="name" value="<%= searchOptions.name %>">
-<button type="submit">Search</button>
+<div class="form-inline">
+    <input class="form-control" type="text" placeholder="Name" name="name" value="<%= searchOptions.name %>">
+<button  class="btn btn-dark form-control" type="submit">Search</button>
+</div>
 </form>
 <br>
 <% authors.forEach( author => { %>
