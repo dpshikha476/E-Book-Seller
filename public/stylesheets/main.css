@@ -1,98 +1,43 @@
-body{
-    /* font-family: 'Akaya Telivigala', cursive; */
-    font-family: 'Acme', sans-serif;
-    background-color: #fff;
-    color: crimson;
+@import 'shared/variables.css';
+@import 'shared/fonts.css';
+@import 'shared/header.css';
+@import 'shared/buttons.css';
+@import 'shared/form.css';
+@import 'shared/author.css';
+@import 'shared/books.css';
+
+:root {
+  font-family: 'Gotham Rounded';
+  font-size: 20px;
+  /* color: var(--color-text-light); */
+  color: crimson;
 }
 
-.navbar
-{
-      padding: 1rem 4rem 1rem;
-      background-color: rgb(248, 239, 241);
-      border-bottom: 4px solid #2e2e2e;
-    
-} 
-.navbar .navbar-brand 
-{
-    font-family: 'Fascinate', cursive;
-    color: #000;
-    font-size: 1.8rem;
-    margin-bottom: 0;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-.navbar .navbar-toggler
-{
-    border: none;
+body {
+  background: rgb(245, 240, 241);
+  /* background: linear-gradient(to right, var(--color-background-dark), var(--color-background-light)); */
 }
 
-.navbar .navbar-nav .nav-item .nav-link
-{
-    font-size: 1.2rem;
-    color: black;
-    padding: 0 12px;
+.container {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 3rem;
 }
 
-
-
-.navbar .navbar-nav .nav-item > a:hover
- {
-    color: crimson;
+.inner-container {
+  margin: 0 2rem;
 }
 
-
-@media only screen and (max-width: 768px)
-{
-    .navbar .navbar-nav .nav-item  .nav-link
-    {
-        padding: 0 4px;
-    }
+.page-header {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
-@media only screen and (max-width: 575px)
-{
-    
-    .navbar
-    {
-        padding: 1rem 2rem 1rem;
-        
-    } 
-
-    .navbar .navbar-brand 
-    {
-        color: #000;
-        font-size: 1.2rem;
-        margin-bottom: 0;
-    }
-
-}
-
-
-.mainpage{
-    margin-top: 4rem;
-}
-
-.book-container{
-    margin-top: 4rem;
- 
-}
-
-.page-header{
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: crimson;
-}
-
-.show-book{
-    color: #000;
-    size: 1rem;
-}
-
-.show-book span{
-    color: #000;
-    size: 1rem;
-    font-weight: bold;
-}
-
-.buttons{
-    display: inline-block;
+.error-message {
+  /* color: hsl(var(--color-danger-hue), 100%, 50%); */
+  color: rgb(253, 6, 47);
 }
